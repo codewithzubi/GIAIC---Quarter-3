@@ -1,0 +1,19 @@
+# Constant sentence start that is used as the beginning of the sentence
+SENTENCE_START: str = "Panaversity is fun. I learned to program and used Python to make my "
+
+def main():
+    # User se adjective input karne ke liye keh rahe hain
+    adjective: str = input("Please type an adjective and press enter. ")
+    
+    # User se noun input karne ke liye keh rahe hain
+    noun: str = input("Please type a noun and press enter. ")
+    
+    # User se verb input karne ke liye keh rahe hain
+    verb: str = input("Please type a verb and press enter. ")
+
+    # Sentence ko form kar rahe hain using inputs and the constant part of the sentence
+    print(SENTENCE_START + adjective + " " + noun + " " + verb + "!")
+
+# Agar script ko directly run kiya jata hai, toh main() function call hoga
+if __name__ == "__main__":
+    main()  # Calling the main function
